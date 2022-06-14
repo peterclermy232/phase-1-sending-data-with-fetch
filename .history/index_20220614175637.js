@@ -6,19 +6,14 @@ function submitData(name,email) {
         "Content-Type": "application/json",
         Accept: "application/json",
        },
-       body: JSON.stringify({
+       body: JSON.stringify(
            name,
            email
-       })
+       )
    })
       .then(function(response){
-       return response.json()
+       return response.JSON()
    })
-      .then(function(object){
-          document.body.innerHTML = object[ "id" ]
-      })
-      .catch(function(err){
-          document.body.innerHTML = err.message
-      })
+   
     
 }
