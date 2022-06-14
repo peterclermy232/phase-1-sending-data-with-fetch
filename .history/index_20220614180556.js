@@ -6,10 +6,10 @@ function submitData(name,email) {
         "Content-Type": "application/json",
         Accept: "application/json",
        },
-       body: JSON.stringify({
+       body: JSON.stringify({}
            name,
            email
-       })
+       )
    })
       .then(function(response){
        return response.json()

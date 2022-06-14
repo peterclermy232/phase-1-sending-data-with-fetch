@@ -9,7 +9,7 @@ function submitData(name,email) {
        body: JSON.stringify({
            name,
            email
-       })
+       )
    })
       .then(function(response){
        return response.json()
